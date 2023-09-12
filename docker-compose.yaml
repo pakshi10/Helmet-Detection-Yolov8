@@ -1,0 +1,18 @@
+version: '3.3'
+services:
+  helmet-detection:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - 8082:8082  # Map port 8080 from container to host
+    volumes:
+      - ./:/app  # Mount the current directory to /app inside the container
+    devices:
+      - /dev/video0:/dev/video0  # Map the host's video device to the container
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia  # If you have NVIDIA GPUs
+              capabilities: [gpu]
