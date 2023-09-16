@@ -11,8 +11,21 @@ Installation of Docker : https://docs.docker.com/engine/install/
 
 Installation of Docker compose : https://docs.docker.com/compose/install/
 
+### Clone this repo
 ```
-    git clone 
+git clone https://github.com/pakshi10/Helmet-Detection-Yolov8.git
+```
 
+### Go inside directory
+```
+cd Helmet-Detection-Yolov8
+```
+### Build
+```
+sudo docker-compose up
+```
+### If the docker is build completely . You will get container name. Open a new terminal and go inside docker.
+```
+sudo docker exec -it container_name bash
 ```
 
