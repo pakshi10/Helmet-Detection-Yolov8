@@ -7,7 +7,9 @@ One of the key innovations in YOLOv8 is its use of anchor-free detection. This m
 ## Installation
 Docker : Make sure you have docker on your system.
 Installation of Docker : https://docs.docker.com/engine/install/
-'''
-sudo docker-compose up
-'''
+
+```
+    git clone 
+
+```
 
